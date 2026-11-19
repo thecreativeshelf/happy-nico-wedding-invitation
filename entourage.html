@@ -3167,6 +3167,457 @@ body:not(.locked) .reveal{
   .rsvp-note p{font-size:18px;}
 }
 
+
+
+/* =========================================================
+   SELECTED SECTIONS — MATCH THE WEDDING ENTOURAGE REFERENCE
+   Only the sections shown in the user's screenshots are styled here.
+   All other invitation sections and functionality remain unchanged.
+========================================================= */
+
+/* Shared editorial heading treatment, limited to the selected sections. */
+.countdown-section .section-heading,
+.our-day-section .section-heading,
+.venue .section-heading,
+.dress-code .section-heading,
+.gifts .section-heading {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.countdown-section .section-heading .eyebrow,
+.our-day-section .section-heading .eyebrow,
+.venue .section-heading .eyebrow,
+.dress-code .section-heading .eyebrow,
+.gifts .section-heading .eyebrow {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.countdown-section .section-heading h2,
+.our-day-section .section-heading h2,
+.venue .section-heading h2,
+.dress-code .section-heading h2,
+.gifts .section-heading h2 {
+  margin: 0;
+  color: var(--red-dark);
+  font-family: var(--serif);
+  font-size: clamp(48px, 8vw, 68px);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.025em;
+}
+
+.countdown-section .section-heading p,
+.our-day-section .section-heading p,
+.venue .section-heading p {
+  max-width: 560px;
+  margin: 22px auto 0;
+  color: #887d7a;
+  font-family: var(--sans);
+  font-size: clamp(15px, 2.2vw, 19px);
+  line-height: 1.7;
+}
+
+/* Countdown — framed champagne boxes like the reference screenshot. */
+.countdown-section {
+  padding: 92px 28px 96px;
+  background: #fffaf3;
+}
+.countdown-section .section-heading {
+  margin-bottom: 48px;
+}
+.countdown-section .countdown-always-visible {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.countdown-section .countdown-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+}
+.countdown-section .countdown-unit {
+  min-height: 245px;
+  padding: 40px 14px 30px;
+  border: 1px solid rgba(184,148,69,.68);
+  border-radius: 3px;
+  background: linear-gradient(145deg, #fffdf9 0%, #f8efe2 100%);
+  box-shadow: 0 14px 34px rgba(91,70,39,.07), inset 0 0 0 7px rgba(255,255,255,.34);
+}
+.countdown-section .countdown-unit::before,
+.countdown-section .countdown-unit::after {
+  width: 27px;
+  height: 27px;
+  border-color: #b89445;
+  opacity: .85;
+}
+.countdown-section .countdown-unit::before {
+  top: 12px;
+  left: 12px;
+}
+.countdown-section .countdown-unit::after {
+  right: 12px;
+  bottom: 12px;
+}
+.countdown-section .countdown-number {
+  font-family: var(--serif);
+  font-size: clamp(58px, 7vw, 82px);
+  font-weight: 500;
+  color: var(--red);
+  line-height: 1;
+}
+.countdown-section .countdown-label {
+  margin-top: 22px;
+  color: #81736e;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .22em;
+}
+
+/* Our Day — elegant timeline with spacious editorial typography. */
+.our-day-section {
+  padding: 96px 30px 105px;
+  background: #fffaf3;
+}
+.our-day-section .section-heading {
+  margin-bottom: 82px;
+}
+.our-day-section .timeline {
+  max-width: 920px;
+}
+.our-day-section .timeline::before {
+  left: 160px;
+  top: 8px;
+  bottom: 8px;
+  background: rgba(184,148,69,.5);
+}
+.our-day-section .timeline-item {
+  grid-template-columns: 130px 60px minmax(0, 1fr);
+  margin-bottom: 72px;
+}
+.our-day-section .timeline-item:last-child {
+  margin-bottom: 0;
+}
+.our-day-section .timeline-time {
+  padding-right: 18px;
+  color: var(--red);
+  font-family: var(--serif);
+  font-size: 25px;
+  line-height: 1.2;
+}
+.our-day-section .timeline-dot {
+  width: 17px;
+  height: 17px;
+  margin: 5px auto 0;
+  background: var(--gold);
+  box-shadow: 0 0 0 7px #fffaf3;
+}
+.our-day-section .timeline-content {
+  padding-left: 22px;
+}
+.our-day-section .timeline-content h3 {
+  color: var(--red-dark);
+  font-family: var(--serif);
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+.our-day-section .timeline-content p {
+  margin-top: 13px;
+  color: #887d7a;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Venues — larger framed cards and photography, preserving original images/links. */
+.venue {
+  padding: 92px 28px 100px;
+  background: #fffaf3;
+  text-align: center;
+}
+.venue .section-heading {
+  margin-bottom: 68px;
+}
+.venue .venue-card {
+  max-width: 900px;
+  margin: 0 auto 38px;
+  padding: 64px 44px 58px;
+  border: 1px solid rgba(184,148,69,.48);
+  background: #fffdf9;
+  box-shadow: 0 10px 28px rgba(64,56,58,.035);
+}
+.venue .venue-label {
+  margin-bottom: 32px;
+  padding: 10px 18px;
+  border: 1px solid rgba(184,148,69,.58);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .2em;
+}
+.venue .venue-illustration {
+  width: min(100%, 610px);
+  margin: 0 auto 34px;
+  border: 1px solid rgba(184,148,69,.5);
+  background: #f7f1e8;
+}
+.venue .venue-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.venue .venue-card h3 {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--red-dark);
+  font-family: var(--serif);
+  font-size: clamp(32px, 4.5vw, 43px);
+  font-weight: 500;
+  line-height: 1.12;
+}
+.venue .venue-address {
+  margin-top: 16px;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .1em;
+  line-height: 1.7;
+}
+.venue .venue-time {
+  margin-top: 24px;
+  color: var(--red);
+  font-family: var(--serif);
+  font-size: 28px;
+}
+.venue .venue-description {
+  max-width: 610px;
+  margin: 25px auto 30px;
+  color: #887d7a;
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.65;
+}
+.venue .location-button {
+  min-width: 195px;
+  padding: 16px 26px;
+  border: 1px solid var(--red);
+  color: var(--red);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .16em;
+}
+
+/* Dress code — refined framed panel and existing colour palette image. */
+.dress-code {
+  padding: 96px 28px 105px;
+  background: #fffaf3;
+  text-align: center;
+}
+.dress-code .section-heading {
+  margin-bottom: 66px;
+}
+.dress-code .dress-card {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 68px 48px 64px;
+  border: 1px solid rgba(184,148,69,.48);
+  background: #f7f1e8;
+}
+.dress-code .color-palette {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  padding: 28px;
+  border: 1px solid rgba(184,148,69,.38);
+  background: rgba(255,253,249,.72);
+}
+.dress-code .palette-image {
+  max-width: 100%;
+  border: 0;
+  box-shadow: none;
+}
+.dress-code .dress-card h3 {
+  color: var(--red-dark);
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 46px);
+  font-weight: 500;
+  line-height: 1.1;
+}
+.dress-code .dress-card p {
+  max-width: 650px;
+  margin: 22px auto 0;
+  color: #887d7a;
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.65;
+}
+.dress-code .dress-note {
+  margin-top: 26px;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
+/* Gifts — retain existing wording and photo, add a matching invitation frame. */
+.gifts {
+  padding: 96px 28px 105px;
+  background: #fffaf3;
+  text-align: center;
+}
+.gifts .section-heading {
+  margin-bottom: 54px;
+}
+.gifts .gifts-card {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 62px 48px 60px;
+  border-top: 1px solid rgba(184,148,69,.58);
+  border-bottom: 1px solid rgba(184,148,69,.58);
+}
+.gifts .gift-icon {
+  margin-bottom: 28px;
+  color: var(--gold);
+  font-size: 42px;
+}
+.gifts .gifts-card h3 {
+  color: var(--red-dark);
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 46px);
+  font-weight: 500;
+}
+.gifts .gift-photo {
+  width: 100%;
+  max-width: 760px;
+  margin: 36px auto 40px;
+  border-radius: 5px;
+  box-shadow: 0 12px 32px rgba(64,56,58,.08);
+}
+.gifts .gifts-card p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #887d7a;
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/* Wedding Entourage already follows the reference; gently align its spacing. */
+.entourage-section {
+  padding: 92px 28px 100px;
+  background: linear-gradient(180deg, #fffaf3 0%, #f7f1e8 100%);
+}
+.entourage-section .entourage-wrap {
+  max-width: 940px;
+}
+.entourage-section .entourage-intro {
+  margin-bottom: 54px;
+}
+.entourage-section .entourage-title {
+  font-size: clamp(54px, 8vw, 78px);
+}
+.entourage-section .entourage-card {
+  padding: 42px 38px 40px;
+  background: #fffdf9;
+  border-color: rgba(184,148,69,.48);
+  box-shadow: 0 10px 28px rgba(64,56,58,.045);
+}
+
+@media (max-width: 600px) {
+  .countdown-section,
+  .our-day-section,
+  .venue,
+  .dress-code,
+  .gifts,
+  .entourage-section {
+    padding: 64px 17px 72px;
+  }
+  .countdown-section .section-heading,
+  .our-day-section .section-heading,
+  .venue .section-heading,
+  .dress-code .section-heading,
+  .gifts .section-heading {
+    margin-bottom: 38px;
+  }
+  .countdown-section .section-heading h2,
+  .our-day-section .section-heading h2,
+  .venue .section-heading h2,
+  .dress-code .section-heading h2,
+  .gifts .section-heading h2 {
+    font-size: clamp(39px, 10vw, 48px);
+  }
+  .countdown-section .countdown-grid {
+    gap: 9px;
+  }
+  .countdown-section .countdown-unit {
+    min-height: 112px;
+    padding: 19px 4px 14px;
+    box-shadow: inset 0 0 0 4px rgba(255,255,255,.34);
+  }
+  .countdown-section .countdown-unit::before,
+  .countdown-section .countdown-unit::after {
+    width: 15px;
+    height: 15px;
+  }
+  .countdown-section .countdown-unit::before {top:7px;left:7px;}
+  .countdown-section .countdown-unit::after {right:7px;bottom:7px;}
+  .countdown-section .countdown-number {
+    font-size: clamp(34px, 9vw, 48px);
+  }
+  .countdown-section .countdown-label {
+    margin-top: 11px;
+    font-size: 7px;
+    letter-spacing: .13em;
+  }
+  .our-day-section .section-heading {margin-bottom: 48px;}
+  .our-day-section .timeline::before {left: 79px;}
+  .our-day-section .timeline-item {
+    grid-template-columns: 65px 29px minmax(0,1fr);
+    margin-bottom: 44px;
+  }
+  .our-day-section .timeline-time {
+    padding-right: 8px;
+    font-size: 16px;
+  }
+  .our-day-section .timeline-dot {
+    width: 13px;
+    height: 13px;
+    margin-top: 4px;
+    box-shadow: 0 0 0 5px #fffaf3;
+  }
+  .our-day-section .timeline-content {padding-left: 10px;}
+  .our-day-section .timeline-content h3 {font-size: 27px;}
+  .our-day-section .timeline-content p {font-size: 14px;}
+  .venue .venue-card {
+    padding: 35px 18px 34px;
+    margin-bottom: 22px;
+  }
+  .venue .venue-label {margin-bottom: 22px;font-size:8px;}
+  .venue .venue-card h3 {font-size: 29px;}
+  .venue .venue-address {font-size:8px;}
+  .venue .venue-time {font-size:23px;}
+  .venue .venue-description {font-size:18px;}
+  .dress-code .dress-card {padding: 35px 17px 38px;}
+  .dress-code .color-palette {padding: 12px;margin-bottom: 30px;}
+  .dress-code .dress-card h3 {font-size:32px;}
+  .dress-code .dress-card p {font-size:18px;}
+  .dress-code .dress-note {font-size:9px;}
+  .gifts .gifts-card {padding: 40px 8px 38px;}
+  .gifts .gifts-card h3 {font-size:31px;}
+  .gifts .gifts-card p {font-size:18px;}
+  .gifts .gift-photo {margin:26px auto 28px;}
+  .entourage-section .entourage-intro {margin-bottom:35px;}
+  .entourage-section .entourage-title {font-size: clamp(44px, 11vw, 58px);}
+  .entourage-section .entourage-card {padding:30px 18px 27px;}
+}
+
 </style>
 
 <!-- Entourage invitation: photo-led opening page, live countdown, no curtain or scratch intro. -->
@@ -3272,7 +3723,7 @@ body:not(.locked) .reveal{
      OUR DAY
 ======================================================= -->
 
-<section class="section">
+<section class="our-day-section section">
 
   <div class="section-heading reveal">
 
