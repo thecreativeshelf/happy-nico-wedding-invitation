@@ -3879,6 +3879,61 @@ body:not(.locked) .reveal{
   }
 }
 
+
+
+/* =========================================================
+   HERO REFINEMENT — names spread across the card, smaller date
+   ========================================================= */
+.hero-couple-names{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  gap:6px;
+  padding:24px 2px 22px;
+  font-size:clamp(48px,10vw,66px);
+  line-height:1;
+}
+.hero-couple-names .hero-name-line{
+  flex:1 1 0;
+  white-space:nowrap;
+}
+.hero-couple-names .hero-name-line:first-child{
+  text-align:left;
+}
+.hero-couple-names .hero-name-line:last-child{
+  text-align:right;
+}
+.hero-couple-names .hero-name-amp{
+  flex:0 0 auto;
+  padding:0 2px;
+  font-size:.58em;
+  line-height:1;
+}
+.hero-date-side,
+.hero-date-side strong,
+.hero-date-year strong,
+.hero-date-day{
+  font-size:36px;
+}
+@media(max-width:600px){
+  .hero-couple-names{
+    font-size:clamp(43px,12vw,58px);
+    gap:3px;
+    padding:22px 0 19px;
+  }
+  .hero-couple-names .hero-name-amp{
+    padding:0 1px;
+  }
+  .hero-date-side,
+  .hero-date-side strong,
+  .hero-date-year strong,
+  .hero-date-day{
+    font-size:35px;
+  }
+}
+
 </style>
 
 <!-- Entourage invitation: photo-led opening page, live countdown, no curtain or scratch intro. -->
