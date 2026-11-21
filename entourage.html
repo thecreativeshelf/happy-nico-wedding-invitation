@@ -3882,32 +3882,44 @@ body:not(.locked) .reveal{
 
 
 /* =========================================================
-   HERO REFINEMENT — names spread across the card, smaller date
+   HERO REFINEMENT — stacked names, aligned to opposite sides
    ========================================================= */
 .hero-couple-names{
   display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:space-between;
+  flex-direction:column;
+  align-items:stretch;
+  justify-content:center;
   width:100%;
-  gap:6px;
-  padding:24px 2px 22px;
-  font-size:clamp(48px,10vw,66px);
-  line-height:1;
+  gap:0;
+  padding:24px 0 20px;
+  font-family:var(--script);
+  font-size:clamp(58px,13vw,72px);
+  line-height:.9;
+  letter-spacing:0;
+  white-space:normal;
 }
 .hero-couple-names .hero-name-line{
-  flex:1 1 0;
+  display:block;
+  flex:none;
   white-space:nowrap;
+  font-family:var(--script);
+  font-size:1em;
+  line-height:.9;
 }
 .hero-couple-names .hero-name-line:first-child{
   text-align:left;
+  align-self:flex-start;
 }
 .hero-couple-names .hero-name-line:last-child{
   text-align:right;
+  align-self:flex-end;
 }
 .hero-couple-names .hero-name-amp{
-  flex:0 0 auto;
-  padding:0 2px;
+  display:block;
+  align-self:center;
+  flex:none;
+  padding:4px 0 5px;
+  font-family:var(--script);
   font-size:.58em;
   line-height:1;
 }
@@ -3915,22 +3927,21 @@ body:not(.locked) .reveal{
 .hero-date-side strong,
 .hero-date-year strong,
 .hero-date-day{
-  font-size:36px;
+  font-size:30px;
 }
 @media(max-width:600px){
   .hero-couple-names{
-    font-size:clamp(43px,12vw,58px);
-    gap:3px;
-    padding:22px 0 19px;
+    font-size:clamp(54px,15vw,66px);
+    padding:21px 0 17px;
   }
   .hero-couple-names .hero-name-amp{
-    padding:0 1px;
+    padding:3px 0 4px;
   }
   .hero-date-side,
   .hero-date-side strong,
   .hero-date-year strong,
   .hero-date-day{
-    font-size:35px;
+    font-size:29px;
   }
 }
 
