@@ -3824,6 +3824,61 @@ body:not(.locked) .reveal{
   }
 }
 
+
+
+/* =========================================================
+   HERO COUPLE PHOTO + SCRIPT NAMES — FINAL FIX
+========================================================= */
+.hero-couple-photo{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1.28 / 1;
+  object-fit:cover;
+  object-position:center;
+}
+.hero-couple-names{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+  padding:24px 0 20px;
+  font-family:var(--script);
+  font-size:clamp(54px,12vw,70px);
+  font-weight:400;
+  line-height:.78;
+  letter-spacing:0;
+  white-space:normal;
+  color:var(--red-dark);
+}
+.hero-couple-names .hero-name-line{
+  display:block;
+  padding:0;
+  color:var(--red-dark);
+  font-family:var(--script);
+  font-size:1em;
+  font-style:normal;
+  font-weight:400;
+  line-height:.9;
+}
+.hero-couple-names .hero-name-amp{
+  display:block;
+  padding:7px 0 9px;
+  color:var(--gold);
+  font-family:var(--script);
+  font-size:.62em;
+  font-style:normal;
+  font-weight:400;
+  line-height:.9;
+}
+@media(max-width:600px){
+  .hero-couple-names{
+    font-size:clamp(52px,14vw,64px);
+    padding:22px 0 18px;
+  }
+}
+
 </style>
 
 <!-- Entourage invitation: photo-led opening page, live countdown, no curtain or scratch intro. -->
@@ -3860,11 +3915,11 @@ body:not(.locked) .reveal{
 
     <img
       class="hero-couple-photo"
-      src="./happy&nico.jpg"
+      src="./happy%26nico.jpg"
       alt="Happy and Nico"
     >
 
-    <div class="hero-couple-names">HAPPY <span>&amp;</span> NICO</div>
+    <div class="hero-couple-names"><span class="hero-name-line">Happy</span><span class="hero-name-amp">&amp;</span><span class="hero-name-line">Nico</span></div>
 
     <div class="hero-date-row">
       <div class="hero-date-side">
@@ -3880,6 +3935,7 @@ body:not(.locked) .reveal{
       Archdiocesan Shrine of St. Thérèse of the Child Jesus<br>
       Cebu City · 2:30 PM
     </div>
+  </div>
 
   <div class="hero-scroll-note">SCROLL TO DISCOVER <span>↓</span></div>
 
