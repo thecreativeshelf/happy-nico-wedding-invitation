@@ -3735,6 +3735,95 @@ body:not(.locked) .reveal{
   .hero-date-year strong{font-size:16px;}
 }
 
+
+
+/* =========================================================
+   HERO TYPOGRAPHY — refined hierarchy
+   Script heading slightly smaller, couple's names prominent,
+   and all three date elements equal in size and gold.
+========================================================= */
+.hero-script-heading{
+  font-size:clamp(36px,8vw,50px);
+  line-height:1.04;
+}
+
+.hero-couple-names{
+  font-family:var(--script);
+  font-size:clamp(48px,10.5vw,64px);
+  font-weight:400;
+  line-height:1.05;
+  letter-spacing:0;
+  color:var(--red-dark);
+  white-space:nowrap;
+  padding:22px 0 20px;
+}
+
+.hero-couple-names span{
+  color:var(--gold);
+  font-family:var(--script);
+  font-style:normal;
+  font-weight:400;
+  padding:0 3px;
+}
+
+.hero-date-row{
+  max-width:350px;
+  color:var(--gold);
+}
+
+.hero-date-side{
+  font-family:var(--serif);
+  font-size:46px;
+  line-height:1;
+  letter-spacing:0;
+}
+
+.hero-date-side strong,
+.hero-date-year strong{
+  font-family:var(--serif);
+  font-size:46px;
+  font-weight:500;
+  line-height:1;
+  letter-spacing:0;
+  color:var(--gold);
+}
+
+.hero-date-day{
+  font-family:var(--serif);
+  font-size:46px;
+  line-height:1;
+  font-weight:500;
+  color:var(--gold);
+}
+
+@media(max-width:600px){
+  .hero-script-heading{
+    font-size:40px;
+  }
+
+  .hero-couple-names{
+    font-size:clamp(43px,11vw,54px);
+    letter-spacing:0;
+    padding:20px 0 18px;
+  }
+
+  .hero-date-row{
+    max-width:330px;
+  }
+
+  .hero-date-side,
+  .hero-date-side strong,
+  .hero-date-year strong,
+  .hero-date-day{
+    font-size:42px;
+  }
+
+  .hero-date-side strong,
+  .hero-date-year strong{
+    letter-spacing:0;
+  }
+}
+
 </style>
 
 <!-- Entourage invitation: photo-led opening page, live countdown, no curtain or scratch intro. -->
@@ -3771,7 +3860,7 @@ body:not(.locked) .reveal{
 
     <img
       class="hero-couple-photo"
-      src="./happyxnico.jpg"
+      src="./happy&nico.jpg"
       alt="Happy and Nico"
     >
 
