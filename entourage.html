@@ -3986,6 +3986,64 @@ body:not(.locked) .reveal{
   line-height:.9;
 }
 
+/* FINAL HERO NAME SPACING — same script font, size and colours. */
+.hero-couple-names{
+  gap:.16em;
+  line-height:1;
+}
+.hero-couple-names .hero-name-second{
+  transform:translateY(3px);
+}
+.hero-couple-names .hero-name-second .hero-name-amp{
+  transform:translateY(2px);
+}
+@media(max-width:600px){
+  .hero-couple-names{
+    gap:.18em;
+    line-height:1;
+  }
+  .hero-couple-names .hero-name-second{
+    transform:translateY(4px);
+  }
+  .hero-couple-names .hero-name-second .hero-name-amp{
+    transform:translateY(2px);
+  }
+}
+
+
+
+/* =========================================================
+   LATEST HERO POLISH — full-width photo + breathing room
+========================================================= */
+.hero-couple-photo{
+  display:block;
+  width:calc(100% + 44px);
+  max-width:none;
+  height:auto;
+  aspect-ratio:1.55 / 1;
+  object-fit:cover;
+  object-position:center;
+  margin:0 -22px;
+}
+
+/* A little more breathing room between the photo and the names. */
+.hero-couple-names{
+  padding-top:32px;
+}
+
+@media(max-width:600px){
+  .hero-couple-photo{
+    width:calc(100% + 32px);
+    margin-left:-16px;
+    margin-right:-16px;
+    aspect-ratio:1.5 / 1;
+  }
+
+  .hero-couple-names{
+    padding-top:30px;
+  }
+}
+
 </style>
 
 <!-- Entourage invitation: photo-led opening page, live countdown, no curtain or scratch intro. -->
