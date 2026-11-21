@@ -2971,7 +2971,9 @@ body:not(.locked) .reveal{
 .hero-script-heading{margin:0 0 14px;}
 .hero-couple-photo{
   display:block;
-  width:100%;
+  width:calc(100% + 44px);
+  max-width:none;
+  margin-left:-22px;
   aspect-ratio:1.28 / 1;
   object-fit:cover;
   object-position:center;
@@ -3044,6 +3046,7 @@ body:not(.locked) .reveal{
 @media(max-width:600px){
   .hero-photo-layout{padding:24px 15px 42px;}
   .hero-invitation-card{padding:21px 16px 24px;border-radius:0;background:transparent;border:0;box-shadow:none;}
+  .hero-couple-photo{width:calc(100% + 32px);margin-left:-16px;}
   .hero-script-heading{font-size:48px;}
   .hero-couple-names{font-size:23px;letter-spacing:.13em;}
   .hero-date-day{font-size:48px;}
