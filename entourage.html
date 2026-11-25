@@ -2022,7 +2022,7 @@ a{
 
 
 /* =========================================================
-   WEDDING ENTOURAGE — editorial invitation-suite styling
+   WEDDING ENTOURAGE — consistent role-heading styling
 ========================================================= */
 .entourage-section{
   padding:76px 24px 88px;
@@ -2041,7 +2041,7 @@ a{
 .entourage-kicker{
   display:block;
   margin-bottom:12px;
-  color:#c98d86;
+  color:var(--gold);
   font-size:9px;
   letter-spacing:.28em;
   text-transform:uppercase;
@@ -2099,14 +2099,38 @@ a{
   font-weight:400;
   line-height:1.05;
 }
-.entourage-subtitle{
-  margin:23px 0 11px;
+
+/* All small role headings use the same dusty-pink, regular-weight style. */
+.entourage-subtitle,
+.entourage-label,
+.entourage-role,
+.entourage-small-note{
   color:#c98d86;
   font-family:var(--sans);
   font-size:9px;
-  font-weight:600;
-  letter-spacing:.2em;
+  font-weight:400;
+  letter-spacing:.18em;
+  line-height:1.5;
   text-transform:uppercase;
+}
+.entourage-subtitle{
+  margin:23px 0 11px;
+}
+.entourage-label{
+  display:block;
+  margin-bottom:6px;
+  font-size:8px;
+  letter-spacing:.16em;
+}
+.entourage-role{
+  display:block;
+  margin-bottom:5px;
+  font-size:8px;
+}
+.entourage-small-note{
+  margin-top:12px;
+  font-size:8px;
+  letter-spacing:.16em;
 }
 .entourage-names{
   color:#55494a;
@@ -2116,8 +2140,8 @@ a{
 }
 .entourage-names p{margin:0 0 5px;}
 .entourage-names strong{
-  color:var(--red-dark);
-  font-weight:600;
+  color:inherit;
+  font-weight:400;
 }
 .entourage-couple{
   display:grid;
@@ -2136,15 +2160,6 @@ a{
   margin-top:25px;
   padding-top:22px;
   border-top:1px solid rgba(184,148,69,.28);
-}
-.entourage-label{
-  display:block;
-  margin-bottom:6px;
-  color:#c98d86;
-  font-family:var(--sans);
-  font-size:8px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
 }
 .entourage-grid{
   display:grid;
@@ -2181,22 +2196,6 @@ a{
   border-bottom:1px solid rgba(184,148,69,.2);
 }
 .entourage-secondary-row:last-child{border-bottom:0;padding-bottom:0;}
-.entourage-role{
-  display:block;
-  margin-bottom:5px;
-  color:#c98d86;
-  font-size:8px;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-}
-.entourage-small-note{
-  margin-top:12px;
-  color:#9a8d87;
-  font-family:var(--sans);
-  font-size:9px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
 @media(max-width:600px){
   .entourage-section{padding:58px 16px 70px;}
   .entourage-card{padding:30px 18px 27px;margin-bottom:17px;}
