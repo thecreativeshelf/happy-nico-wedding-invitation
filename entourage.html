@@ -2185,6 +2185,9 @@ a{
   padding:7px 4px;
   border-bottom:1px solid rgba(184,148,69,.17);
 }
+.entourage-pair-list p span{
+  display:block;
+}
 .entourage-secondary{
   display:grid;
   gap:14px;
@@ -2203,7 +2206,14 @@ a{
   .entourage-person + .entourage-person{padding-left:10px;}
   .entourage-parents{gap:10px;}
   .entourage-names{font-size:16px;}
-  .entourage-grid,.entourage-pair-list{gap:5px 12px;}
+  .entourage-grid{gap:5px 12px;}
+  .entourage-pair-list{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+  .entourage-pair-list p{
+    padding:9px 4px;
+  }
 }
 @media(max-width:380px){
   .entourage-couple,.entourage-parents{grid-template-columns:1fr;}
@@ -4528,17 +4538,17 @@ body:not(.locked) .reveal{
     <article class="entourage-card reveal">
       <h3 class="entourage-script">Principal Sponsors</h3>
       <div class="entourage-pair-list entourage-names">
-        <p>Edgardo Balsamo and Hazel Mumar</p>
-        <p>Mario Chan and Josephine Chan</p>
-        <p>Cong. Edwin Ongchuan and Blesila Ongchuan</p>
-        <p>Jessito Villamor and Cristela Villamor </p>
-        <p>Leo Chiu and Jade Salingay</p>
-        <p>JP Amadora and Christine Amadora</p>
-        <p>Rudolfo Mumar and Lorna Chiu</p>
-        <p>Oscar Deguilmo and Myrna Deguilmo</p>
-        <p>Abner Baran and Consolacion Baran</p>
-        <p>Arnulfo Reyes and Raidis Reyes</p>
-        <p>Pempe Deguilmo and Felicity Deguilmo</p>
+        <p><span>Edgardo Balsamo and</span><span>Hazel Mumar</span></p>
+        <p><span>Mario Chan and</span><span>Josephine Chan</span></p>
+        <p><span>Cong. Edwin Ongchuan and</span><span>Blesila Ongchuan</span></p>
+        <p><span>Jessito Villamor and</span><span>Cristela Villamor</span></p>
+        <p><span>Leo Chiu and</span><span>Jade Salingay</span></p>
+        <p><span>JP Amadora and</span><span>Christine Amadora</span></p>
+        <p><span>Rudolfo Mumar and</span><span>Lorna Chiu</span></p>
+        <p><span>Oscar Deguilmo and</span><span>Myrna Deguilmo</span></p>
+        <p><span>Abner Baran and</span><span>Consolacion Baran</span></p>
+        <p><span>Arnulfo Reyes and</span><span>Raidis Reyes</span></p>
+        <p><span>Pempe Deguilmo and</span><span>Felicity Deguilmo</span></p>
       </div>
     </article>
 
